@@ -208,7 +208,9 @@ class Demo::Test
     ....
   end
 end
+```
 
+```
 module Cluster
   class Array
     def initialize (n)
