@@ -81,7 +81,7 @@ end
 ```
 class  AnnualWeather
   def initialize
-    @readings = [{high: 2, low: 1}, {high: 2, low: 1}, {high: 2, low: 1}, {high: 2, low: 1}]
+    @readings = [{:high => 2, :low => 1}, {:high => 2, :low => 1}, {:high => 2, :low => 1}, {:high => 2, :low => 1}]
   end
   def average
     return 0.0 if @readings.size.zero?
