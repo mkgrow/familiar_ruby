@@ -29,7 +29,7 @@ class SetValue
 end
 
 x = SetValue.new
-puts x.value = 1  (看似是变量赋值，但实质上仅仅是一个普通的方法调用。)
+puts x.value = 1
 ```
 从技术上讲“ =”是方法名的一部分，Ruby 却允许我们在等号和方法名的其他部分之间输入空格
 <br>puts x.value=(1)</br>
