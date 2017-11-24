@@ -39,10 +39,10 @@ puts x.value = 1
 <br>说到困难，我们得看看赋值和 setter 之间的区别。由于 setter 方法的调用看似变量 赋值，因此很容易混淆它们</br>
 ```
 class Counter
-  attr_accessor(:counter)
-    def initialize
-  counter = 0
-  end
+	attr_accessor(:counter)
+	def initialize
+		counter = 0
+	end
 end
 ```
 <br>把 initialize 方法体中的内容当作对 counter= 方法的调用也不是毫无道理，这也是 很多人所假设的。但这当然是不对的，那只是个简单的变量赋值呀。initialize 方法创建 了一个新的局部变量 counter，并将其赋值为 0，然后又在作用域结束的时候丢弃了对这 个变量的引用。当你仔细思考，会发现这显然不是我们想做的。
